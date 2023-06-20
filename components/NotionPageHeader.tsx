@@ -79,7 +79,20 @@ export const NotionPageHeader: React.FC<{
             .filter(Boolean)}
 
           <ToggleThemeButton />
-
+          
+      <div className={styles.settings}>
+        {hasMounted && (
+          <a
+            className={styles.toggleDarkMode}
+            href='#'
+            role='button'
+            onClick={onToggleDarkMode}
+            title='Toggle dark mode'
+          >
+            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+          </a>
+        )}
+      </div>
           {isSearchEnabled && <Search block={block} title={null} />}
         </div>
       </div>
