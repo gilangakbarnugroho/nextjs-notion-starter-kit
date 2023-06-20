@@ -2,15 +2,15 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'Public-a616988203c346a19064b541b70eba5e',
+  rootNotionPageId: 'dfc36dd040f44da7ae6180e67ace6a83?v=6ecb2b9171f0477da9bce0fe8668ae57',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Public',
-  domain: 'https://www.notion.so/visualdev/Public-a616988203c346a19064b541b70eba5e',
+  name: 'Visual Developer',
+  domain: 'https://www.notion.so/visualdev/dfc36dd040f44da7ae6180e67ace6a83?v=6ecb2b9171f0477da9bce0fe8668ae57',
   author: 'Gil | Visual Developer',
 
   // open graph metadata (optional)
