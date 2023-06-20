@@ -79,8 +79,11 @@ export const NotionPageHeader: React.FC<{
             .filter(Boolean)}
 
           <ToggleThemeButton />
-          
-      <div className={styles.settings}>
+
+          {isSearchEnabled && <Search block={block} title={null} />}
+        </div>
+        
+        <div className={styles.settings}>
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -92,8 +95,6 @@ export const NotionPageHeader: React.FC<{
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
-      </div>
-          {isSearchEnabled && <Search block={block} title={null} />}
         </div>
       </div>
     </header>
